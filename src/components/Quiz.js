@@ -1,3 +1,4 @@
+import React  from 'react';
 import {useContext, useEffect} from "react";
 import Question from './Question'
 import {QuizContext} from "../contexts/quiz";
@@ -22,7 +23,7 @@ const Quiz = () => {
 
     });
     return (
-        <div className={'quiz'}>
+        <div className={'quiz container mx-auto'}>
             {quizState.showResults && (
                 <div className={'results'}>
                     <div className={'congratulations'}>Congratulations</div>

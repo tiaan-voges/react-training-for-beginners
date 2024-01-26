@@ -1,15 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-    background-color: #e4e4e4;
-}
 
-div {
-    box-sizing: border-box;
-}
-
-.quiz {
-    width: 975px;
-    margin: 0 auto;
-    margin-top: 100px;
 }
 
 .question {

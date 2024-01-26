@@ -1,3 +1,4 @@
+import React  from 'react';
 import Answer from './Answer'
 import {useContext} from "react";
 import {QuizContext} from "../contexts/quiz";
