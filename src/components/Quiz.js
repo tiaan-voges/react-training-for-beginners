@@ -23,7 +23,7 @@ const Quiz = () => {
 
     });
     return (
-        <div className={'quiz container mx-auto'}>
+        <div className={'quiz container'}>
             {quizState.showResults && (
                 <div className={'results'}>
                     <div className={'congratulations'}>Congratulations</div>
