@@ -13,10 +13,10 @@ const Answer = ({
     const isWrongAnswer = currentAnswer === answerText && currentAnswer !== correctAnswer;
     const correctAnswerClass = isCorrectAnswer ? 'correct-answer' : '';
     const wrongAnswerClass = isWrongAnswer ? 'wrong-answer' : '';
-    const disabledClass = currentAnswer ? 'disabled-answer' : '';
+    const disabledClass = currentAnswer ? 'disabled-answer opacity-50 cursor-not-allowed' : '';
 
     return (
-        <div className={`answer ${correctAnswerClass} ${wrongAnswerClass} ${disabledClass}`}
+        <div className={`rounded-md answer ${correctAnswerClass} ${wrongAnswerClass} ${disabledClass}`}
              onClick={() => onSelectAnswer(answerText)}>
             <div className={'answer-letter'}>{letterMapping[index]}</div>
             <div className={'answer-text'}>

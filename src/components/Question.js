@@ -9,7 +9,7 @@ const Question = ({questions}) => {
     return (
         <div>
             <div className={'question'}>{currentQuestion.question}</div>
-            <div className={'answers columns-3 gap-8'}>
+            <div className={'answers'}>
                 {quizState.answers.map((answer, index) => (
                     <Answer answerText={answer}
                             key={index}
